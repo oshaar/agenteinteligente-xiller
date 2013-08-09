@@ -1,0 +1,70 @@
+// Secuencia de comandos de recursos generada en Microsoft Visual C++.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Recursos en inglés (EE.UU.)
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icono
+//
+
+// El icono colocado en primer lugar o con valores de id. inferiores se convertirá en el icono de la aplicación
+
+LANGUAGE 10, 3
+#pragma code_page(1252)
+1           ICON         "app.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE  
+BEGIN
+    "resource.h\0"
+    "\0"
+END
+
+2 TEXTINCLUDE  
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE  
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+#ifndef APSTUDIO_INVOKED
+
+
+
+#endif    // No APSTUDIO_INVOKED
+

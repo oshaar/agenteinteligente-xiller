@@ -1,0 +1,8 @@
+C:\CODE\C#\AgenteInteligente\Xiller\bin\Debug\Xiller.exe
+C:\CODE\C#\AgenteInteligente\Xiller\bin\Debug\Xiller.pdb
+C:\CODE\C#\AgenteInteligente\Xiller\obj\Debug\ResolveAssemblyReference.cache
+C:\CODE\C#\AgenteInteligente\Xiller\obj\Debug\Xiller.Form1.resources
+C:\CODE\C#\AgenteInteligente\Xiller\obj\Debug\Xiller.Properties.Resources.resources
+C:\CODE\C#\AgenteInteligente\Xiller\obj\Debug\Xiller.csproj.GenerateResource.Cache
+C:\CODE\C#\AgenteInteligente\Xiller\obj\Debug\Xiller.exe
+C:\CODE\C#\AgenteInteligente\Xiller\obj\Debug\Xiller.pdb

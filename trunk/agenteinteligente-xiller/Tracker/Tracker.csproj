@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96205093-AB76-4BF3-980F-E2842A10FB8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tracker</RootNamespace>
+    <AssemblyName>Tracker</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>4CD198143F4FA847A04941C0CF8B684E8F123BB6</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Tracker_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>C:\CODE\clickone\xiller\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Imaging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=38eb47741dd0492e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\motion_src\motion_src\motion\bin\Release\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math, Version=1.2.0.0, Culture=neutral, PublicKeyToken=e12ceb15b47eb5cc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\motion_src\motion_src\motion\bin\Release\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="AgenteInteligente, Version=1.0.3157.33140, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\AgenteInteligente.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.GrFingerXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GrFingerX\bin\AxInterop.GrFingerXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="dshow, Version=1.0.3157.13854, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\motion_src\motion_src\dshow\bin\Release\dshow.dll</HintPath>
+    </Reference>
+    <Reference Include="FaceDetection, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\TestDetection_v.2\Bin\Debug\FaceDetection.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.GrFingerXLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GrFingerX\bin\Interop.GrFingerXLib.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GrFingerX\bin\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tiger.Video.VFW, Version=1.0.3157.13854, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\motion_src\motion_src\motion\bin\Release\Tiger.Video.VFW.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algoritmos\MotionDetector1.cs" />
+    <Compile Include="Algoritmos\MotionDetector2.cs" />
+    <Compile Include="Algoritmos\MotionDetector3.cs" />
+    <Compile Include="Algoritmos\MotionDetector3Optimized.cs" />
+    <Compile Include="Algoritmos\MotionDetector4.cs" />
+    <Compile Include="Camera\Camera.cs" />
+    <Compile Include="Camera\CameraWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Camera\IMotionDetector.cs" />
+    <Compile Include="Camera\VideoSource\ByteArrayUtils.cs" />
+    <Compile Include="Camera\VideoSource\CameraEvents.cs" />
+    <Compile Include="Camera\VideoSource\CaptureDevice.cs" />
+    <Compile Include="Camera\VideoSource\IVideoSource.cs" />
+    <Compile Include="Camera\VideoSource\JPEGStream.cs" />
+    <Compile Include="Camera\VideoSource\MJPEGStream.cs" />
+    <Compile Include="Camera\VideoSource\VideoFileSource.cs" />
+    <Compile Include="Camera\VideoSource\VideoStream.cs" />
+    <Compile Include="fingerprint\DBClass.cs" />
+    <Compile Include="fingerprint\formMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fingerprint\formOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fingerprint\ImageConverter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="fingerprint\InputBox.cs" />
+    <Compile Include="fingerprint\Util.cs" />
+    <Compile Include="Maestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maestro.Designer.cs">
+      <DependentUpon>Maestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rostro.cs" />
+    <Compile Include="RostroTracker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RostroTracker.Designer.cs">
+      <DependentUpon>RostroTracker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tracker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tracker.Designer.cs">
+      <DependentUpon>Tracker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Camera\CameraWindow.resx">
+      <DependentUpon>CameraWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tracker.resx">
+      <DependentUpon>Tracker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionDispositivoForm.resx">
+      <DependentUpon>SeleccionDispositivoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="recursos\face.nn" />
+    <None Include="recursos\pca.nn" />
+    <None Include="recursos\preflt.nn" />
+    <None Include="recursos\skin.nn" />
+    <None Include="Tracker_TemporaryKey.pfx" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SeleccionDispositivoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionDispositivoForm.Designer.cs">
+      <DependentUpon>SeleccionDispositivoForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cascades\haarcascade_frontalface_alt.xml" />
+    <Content Include="Cascades\ojoD.xml" />
+    <Content Include="Cascades\ojoI.xml" />
+    <EmbeddedResource Include="fingerprint\formMain.resx">
+      <DependentUpon>formMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fingerprint\formOption.resx">
+      <DependentUpon>formOption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maestro.resx">
+      <DependentUpon>Maestro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\1.gif" />
+    <EmbeddedResource Include="Resources\2.gif" />
+    <EmbeddedResource Include="Resources\3.gif" />
+    <EmbeddedResource Include="Resources\4.gif" />
+    <EmbeddedResource Include="Resources\5.gif" />
+    <EmbeddedResource Include="Resources\6.gif" />
+    <EmbeddedResource Include="Resources\7.gif" />
+    <EmbeddedResource Include="Resources\8.gif" />
+    <EmbeddedResource Include="Resources\9.gif" />
+    <EmbeddedResource Include="RostroTracker.resx">
+      <DependentUpon>RostroTracker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
